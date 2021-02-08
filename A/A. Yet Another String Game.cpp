@@ -11,21 +11,37 @@ using namespace std;
 #define    gcd(a,b)     __gcd(a,b)
 #define    lcm(a,b)       (a*(b/gcd(a,b)))
 #define    ll             long long int
-
 int main(){
 #ifdef OJ
         freopen("inputf.in", "r", stdin);
         freopen("outputf.in", "w", stdout);
 #endif
-    //ll test;cin>>test;while(test--)
+    ll test;cin>>test;while(test--)
         {
 
-            ll t,a,c;cin>>t>>a>>c;
-            if(c==0 && t<=a)cout<<"Aoki"<<endl;
-            else if(c==0 && t>a) cout<<"Takahashi"<<endl;
-            else if(c==1 && a<=t) cout<<"Takahashi"<<endl;
-            else cout<<"Aoki"<<endl;
+            string str;cin>>str;
+            string s="";
+            for(ll i=0;i<str.length();i++){
+                if(i%2==0){
+                    if(str[i]!='a'){
+                        s=s+'a';
+                    }
+                    else{
+                        s=s+'b';
+                    }
+                }
+                else{
+                    if(str[i]!='z'){
+                        s=s+'z';
+                    }
+                    else{
+                        s=s+'y';
+                    }
+                }
+            }
+            cout<<s<<endl;
 
         }
 return 0;
 }
+

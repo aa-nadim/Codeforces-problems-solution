@@ -17,13 +17,19 @@ int main(){
         freopen("inputf.in", "r", stdin);
         freopen("outputf.in", "w", stdout);
 #endif
-    //ll test;cin>>test;while(test--)
+    ll test;cin>>test;while(test--)
         {
-
-            ll a,b=9;
-            cin>>a;
-            cout<<a+b<<endl;
-
+            ll a,b;cin>>a>>b;
+            ll c=0;
+            if(b==1){
+                b++;c++;
+            }
+            while(1){
+                a=(a/b);c++;
+                if(a==0)break;
+            }
+            cout<<c<<endl;
         }
 return 0;
 }
+

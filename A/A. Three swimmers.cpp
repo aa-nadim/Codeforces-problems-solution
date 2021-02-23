@@ -17,13 +17,18 @@ int main(){
         freopen("inputf.in", "r", stdin);
         freopen("outputf.in", "w", stdout);
 #endif
-    //ll test;cin>>test;while(test--)
+    ll test;cin>>test;while(test--)
         {
-
-            ll a,b=9;
-            cin>>a;
-            cout<<a+b<<endl;
-
+            ll p,a,b,c;
+            cin>>p>>a>>b>>c;
+            ll x = p/a;
+            ll y = p/b;
+            ll z = p/c;
+            if(x*a < p) x++;
+            if(y*b < p) y++;
+            if(z*c < p) z++;
+            cout<<min((x*a)-p , min((y*b)-p , (z*c)-p))<<endl;
         }
 return 0;
 }
+

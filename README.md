@@ -1,10 +1,10 @@
 # Online-Judge-problems-solution
 
-## MyCodeForcesHandle
+## My-CodeForces-Handle
 -> https://codeforces.com/profile/GarbageValue
 
-## MyStopstalkHandle
+## My-Stopstalk-Handle
 -> https://www.stopstalk.com/user/profile/Garbage_Value
 
-## CSES-problems-solution
+## CSES-Handle
 -> https://cses.fi/user/55727
